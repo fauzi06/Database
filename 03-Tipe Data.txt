@@ -1,0 +1,76 @@
+Tipe Data pada Mysql
+
+Tipe Data Number
+secara garis besar, Tipe Data Number di mysql ada 2 jenis:
+-Integer (bilangan bulat)
+-Float (bilangan pecahan)
+
+Tipe Data Integer
+----------------------------------------------------------------------------------------------------------------------------------------
+Type        Length in Byte    Minimum Value (Signed)    Maximum Value (Signed)    Minimum Value (UnSigned)    Maximum Value (UnSigned)
+----------------------------------------------------------------------------------------------------------------------------------------
+tinyint     1                 -128                      127                       0                           255
+smallint    2                 -32768                    32767                     0                           65535
+mediumint   3                 -8388608                  8388607                   0                           16777215
+int         4                 -2147483648               2147483647                0                           4294967295
+bigint      8                 -9223372036854775808      9223372036854775807       0                           18446744073709551615
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Tipe Data Float
+----------------------------------------------------------------------------------------------------------------------------------------
+Type        Length in Byte    Minimum Value (Signed)    Maximum Value (Signed)    Minimum Value (UnSigned)    Maximum Value (UnSigned)
+----------------------------------------------------------------------------------------------------------------------------------------
+Float       4                 -3.402823466E+38          -1.175494351E-38          1.175494351E-38             3.402823466E+38
+Double      8                 -1.7976931348623157E+308  -2.2250738585072014E-308  2.2250738585072014E-308     1.7976931348623157E+308
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Decimal tipe data khusus yang bisa ditentukan jumlah precision dan scalenya
+--------------------------------------------------------
+Decimal                   Min                 Max
+--------------------------------------------------------
+Decimal(5,2)              -999.99             999.99
+Decimal(5,0)              -99999              999999
+--------------------------------------------------------
+
+Number Attribut
+Type(N)         Menentukan N sebagai batas contoh int(3) berarti max numbernya menjadi 999
+Zerofill        memunculkan angka nol diawal contoh int(3) zerofill, ketika kita input angka 1 maka yang muncul menjadi angka 001
+
+
+
+Tipe Data String (Char dan Varchar)
+------------------------------------------------------------------------------------------------------
+Value           Char(4)             Storage Required            Varchar(4)          Storage Required
+------------------------------------------------------------------------------------------------------
+''              '    '              4 bytes                     ''                  1 byte
+'ab'            'ab  '              4 bytes                     'ab'                3 bytes
+'abcd'          'abcd'              4 bytes                     'abcd'              5 bytes
+'abcdefg'       'abcd'              4 bytes                     'abcd'              5 bytes
+------------------------------------------------------------------------------------------------------
+
+Text tipe data khusus yang tidak bisa kita tentukan panjang datanya karena sudah mempunyai panjang data sendiri
+- tinytext      max 255 karakter            (256 bytes)
+- text          max 65535 karakter          (64 kb)
+- mediumtext    max 16777215 karakter       (16 MB)
+- longtext      max 4294967295 karakter     (4 GB)
+
+Enum tipe data string yang bisa kita tentukan isi dari data tersebut
+enum('l','p')   artinya hanya bisa menerima data l atau p saja.
+
+
+
+Tipe Data Date and Time
+--------------------------------------------------------------------
+type                    format                    Storage Required
+--------------------------------------------------------------------
+date                    YYYY-MM-DD                3 bytes
+datetime                YYYY-MM-DD HH:MM:SS       8 bytes
+timestamp               YYYY-MM-DD HH:MM:SS       8 bytes
+time                    HH:MM:SS                  3 bytes
+year                    YYYY                      1 bytes
+--------------------------------------------------------------------
+
+
+Tipe Data Boolean (True or False)
+
+tipe data lain silahkan cek di https://dev.mysql.com/doc/refman/8.0/en/data-types.html
