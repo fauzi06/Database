@@ -1,0 +1,23 @@
+Query Pengambilan Data Lanjutan
+select* from nama_table
+
+
+Order By Clause
+- Digunakan untuk pengurutan data asc atau desc
+
+            ORDER BY NAMA_KOLOM;                                          (secara default akan mengurutkan data secara asc)
+
+            ORDER BY NAMA_KOLOM1 ASC, NAMA_KOLOM2 DESC;                   (pengurutan 2 kolom atau lebih)
+
+
+Limit Clause
+- Digunakan untuk membatasi jumlah data yang akan kita ambil pada sebuah table
+
+            LIMIT JUMLAH_LIMIT;
+
+            LIMIT JUMLAH_SKIP_DATA, JUMLAH_LIMIT;                 (skip kolom dan limit kolom);
+
+Select Distinct Data
+- Digunakan untuk menghilangkan data duplikat
+
+            SELECT DISTINCT NAMA_KOLOM FROM NAMA_TABLE;
