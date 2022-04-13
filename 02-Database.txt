@@ -1,0 +1,17 @@
+DATABASE adalah tempat dimana kita akan menyimpan table di MYSQL
+jika kita ibaratkan TABEL di MYSQL adalah sebuah file maka DATABASE adalah sebuah foldernya, dimana kita bisa menyimpan beberapa TABEL disebuah DATABASE
+biasanya kita akan membuat satu DATABASE dalam satu aplikasi
+
+berikut perintah sql yang digunakan untuk mengakses database:
+
+-Melihat database
+          SHOW DATABASES;
+
+-Membuat database
+          CREATE DATABASE NAMA_DATABASE;
+
+-Menghapus database
+          DROP DATABASE NAMA_DATABASE;
+
+-Memilih database yang ingin digunakan
+          USE NAMA_DATABASE;
