@@ -1,0 +1,33 @@
+Where Clause 
+- Ketika kita ingin mengambil data dengan perintah SQL SELECT, kadang kita ingin melakukan pencarian.
+- Misal kita ingin mencari data yang bernama 'MANTIB'
+- Hal ini bisa kita lakukan dengan WHERE Clause setelah perintah SELECT
+
+        SELECT* FROM NAMA_TABLE WHERE NAMA_KOLOM = 'DATA_YANG_DICARI';
+        
+        
+Update data
+- mengubah data yang sudah dibuat
+- untuk update kita harus memberitahu kolom mana yang ingin diupdate
+
+Berikut perintah sql untuk update data
+
+Update data untuk satu kolom
+            UPDATE NAMA_TABLE
+            SET NAMA_KOLOM = DATA
+            WHERE NAMA_KOLOM_CARI = DATA_KOLOM_CARI;
+
+
+Update data untuk beberapa kolom
+            UPDATE NAMA_TABLE
+            SET NAMA_KOLOM1 = DATA1
+                NAMA_KOLOM2 = DATA2
+            WHERE NAMA_KOLOM_CARI = DATA_KOLOM_CARI;
+
+
+Delete Data
+- Menghapus data
+
+Berikut perintah sql untuk menghapus data
+
+           DELETE FROM NAMA_TABLE WHERE NAMA_KOLOM_CARI = DATA_KOLOM_CARI;
