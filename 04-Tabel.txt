@@ -1,0 +1,83 @@
+Table
+- data biasanya disimpan didalam table di mysql
+- tiap table biasanya menyimpan satu jenis data
+- sebelum kita input data ketabel kita harus membuat tabelnya terlebih dahulu
+- dan tiap tabel yang kita buat kita wajib menentukan kolom-kolomnya dan tipe data tiap kolom
+- kita juga bisa mengubah table yang sudah kita buat
+
+Berikut perintah sql untuk mengakses table
+Harus di perhatikan kita harus memilih database terlebih dahulu jika kita ingin mengakses table
+
+Melihat table
+              SHOW TABLES;
+
+Membuat table
+              CREATE TABLE NAMA_TABLE
+                  (
+                      NAMA_KOLOM1 TIPE_DATA,
+                      NAMA_KOLOM2 TIPE_DATA,
+                      NAMA_KOLOM3 TIPE DATA,
+                      ..
+                  );
+
+Melihat struktur table
+              DESC NAMA_TABLE;
+
+Melihat syntax create table yang sudah dibuat
+              SHOW CREATE TABLE NAMA_TABLE;
+
+Mereset Table
+              TRUNCATE NAMA_TABLE;
+
+Menghapus table
+              DROP TABLE NAMA_TABLE;
+
+Memodifikasi table yang telah dibuat
+        ALTER TABLE NAMA_TABLE
+        
+                    RENAME NAMA_TABLE_BARU;                                   (mengganti nama table)
+                    
+                    ADD COLUMN NAMA_KOLOM TIPE_DATA;                          (menambahkan kolom baru diakhir)
+                    
+                    ADD COLUMN NAMA_KOLOM TIPE_DATA FIRST;                    (menambahkan kolom baru diawal)
+                    
+                    ADD COLUMN NAMA_KOLOM TIPE_DATA AFTER NAMA_KOLOM_SISIP;   (menambahkan kolom setelah kolom yang sudah dibuat)
+                    
+                    CHANGE COLUMN NAMA_KOLOM_LAMA NAMA_KOLOM_BARU TIPE_DATA;  (mengubah nama kolom,tipe data, dan ukuran kolom)
+                    
+                    MODIFY NAMA_KOLOM TIPE_DATA_BARU;                         (mengubah tipe data dan ukuran kolom)
+                    
+                    MODIFY NAMA_KOLOM TIPE_DATA FIRST;                        (memindahkan kolom keawal)
+                    
+                    MODIFY NAMA_KOLOM TIPE_DATA AFTER NAMA_KOLOM_SISIP;       (memindahkan kolom ke kolom sisip)
+                    
+                    DROP COLUMN NAMA_KOLOM;                                   (menghapus kolom)
+
+
+Table Attribute
+- NOT NULL                          (setting agar data pada kolom tidak boleh kosong)
+- DEFAULT NILAI_DEFAULT             (setting agar default nilainya tidak null)
+
+
+
+Primary Key
+- Primary key adalah sebuah kolom yang kita tunjuk sebagai id dari table tersebut
+- primary key adalah identitas untuk setiap baris data didalamnya
+- primary key harus unik, tidak boleh ada data yang sama dalam primary key
+
+Berikut perintah sql untuk membuat Primary Key
+
+Manambahkan primary key ketika tabel dibuat
+        CREATE TABLE NAMA_TABLE
+                  (
+                      NAMA_KOLOM1 TIPE_DATA,
+                      NAMA_KOLOM2 TIPE_DATA,
+                      NAMA_KOLOM3 TIPE DATA,
+                      ..,
+                      PRIMARY KEY(NAMA_KOLOM)
+                  );
+
+
+Menambahkan primary key pada tabel yang sudah dibuat
+            ALTER TABLE NAMA_TABLE
+                  ADD PRIMARY KEY(NAMA_KOLOM);
