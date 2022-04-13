@@ -1,0 +1,20 @@
+Bagi yang belum download & menginstall Aplikasi XAMPP silahkan download dan install terlebih dahulu
+Link Download XAMPP - https://www.apachefriends.org/download.html
+
+Baik sedikit perkenalan Aplikasi XAMPP ini bisa digunakan untuk membuat database menggunakan MYSQL
+MYSQL adalah sebuah DBMS ( DataBase Management System ) yang bertipe Relational Database
+Relational Database adalah penyimpanan data yang berbasis Table
+Relational Database memiliki perintah standar menggunalan SQL, sehingga kita mudah mengganti aplikasi DBMS
+MYSQL dibuat dan diperkenalkan pertama kali pada tahun 1995 oleh David Axmark dan Michael Widenius
+
+Untuk Kedepannya kita akan menggunakan MYSQL via CMD berikut cara mengaksesnya :
+- Buka aplikasi Xampp
+- Pada menu action klick start pada apache dan mysql sampai module apache dan mysql berwarna hijau
+- buka CMD ( windows + R ketikan cmd lalu enter )
+Berikut command pada CMD yang digunakan untuk mengakses mysql
+cd.. (enter)
+cd.. (enter)
+cd xampp/mysql/bin (enter)
+mysql -uroot -p (enter)
+(default password kosong tinggal enter)
+selesai kalian sudah bisa mengakses myqsl via CMD
