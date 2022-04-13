@@ -1,0 +1,31 @@
+Insert Data
+
+- Sebelum memasukan data kedalam tabel pastinya kita harus membuat tabel terlebih dahulu
+- Kita harus menyebutkan kolom yang akan kita isi
+- Jika tidak disebutkan kolomnya maka kolom tersebut tidak akan terisi
+- dan kolom tersebut akan bernilai null, kecuali memiliki default value
+
+Berikut perintah sql untuk Insert Data
+
+Menambahkan Data Baru
+            INSERT INTO NAMA_TABLE(NAMA_KOLOM1, NAMA_KOLOM2, NAMA_KOLOM3, ..)
+                   VALUES (DATA1, DATA2, DATA3, ..);
+
+Menambahkan Data Baru Sekaligus
+            INSERT INTO NAMA_TABLE (NAMA_KOLOM1, NAMA_KOLOM2, NAMA_KOLOM3, ..)
+                   VALUES (DATA1, DATA2, DATA3, ..),
+                          (DATA1, DATA2, DATA3, ..),
+                          (DATA1, DATA2, DATA3, ..);
+                   
+
+
+Mengambil Data
+- Kita bisa mengambil data dari semua tabel atau hanya ingin mengambil sebagian data dari beberapa kolom saja
+
+Berikut perintah sql untuk pengambilan data
+
+Mengambil data dari Semua Kolom
+          SELECT*FROM NAMA_TABLE;
+
+Mengambil data dari beberapa kolom
+          SELECT NAMA_KOLOM1, NAMA_KOLOM2, .. FROM NAMA_TABLE;
