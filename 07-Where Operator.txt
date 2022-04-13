@@ -1,0 +1,44 @@
+Where Operator
+
+Operator Perbandingan
+
+---------------------------------------------------------
+Operator                        Keterangan
+---------------------------------------------------------
+=                               Sama Dengan
+<> atau !=                      Tidak Sama Dengan
+<                               Kurang Dari
+<=                              Kurang Dari Sama Dengan
+>                               Lebih Dari
+>=                              Lebih Dari Sama Dengan
+---------------------------------------------------------
+
+Operator And dan Or
+
+Operator Like
+
+-----------------------------------------------------------------
+Like Operator                   Keterangan
+-----------------------------------------------------------------
+Like 'a%'                       String dengan awalan a
+Like '%a'                       String dengan akhiran a
+like '%fauzi%'                  String yang berisi kata fauzi
+not like                        tidak like
+-----------------------------------------------------------------
+
+Null Operator
+- Operator yang digunakan untuk mencari data yang null / tidak null
+
+is null & is not null
+
+Between Operator
+- Operator yang digunakan untuk mencari data diantara nilai1 dan nilai2
+
+between nilai1 and nilai2
+not between nilai1 and nilai2
+
+In Operator
+- Operator yang digunakan untuk mencari sebuah kolom dengan beberapa nilai
+
+in (nilai1, nilai2)
+not in (nilai1,nilai2)
